@@ -4,6 +4,7 @@ public class Employee {
 
     Integer wageperhour;
     Integer workhour = 0;
+    Integer noofdayspresent = 0;
 
     Integer attendance;
     Employee(String n,Integer i,Integer w){
