@@ -1,8 +1,16 @@
+import java.util.Scanner;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Employee e1 = new Employee("Raagul",88,10);
+        Scanner s = new Scanner(System.in);
+        System.out.println("ENTER THE NAME OF THE EMPLOYEE : ");
+        String a = s.nextLine();
+        System.out.println("ENTER THE ID OF THE EMPLOYEE : ");
+        Integer b = s.nextInt();
+        System.out.println("ENTER THE WAGE PER HOUR OF THE EMPLOYEE : ");
+        Integer c = s.nextInt();
+        Employee e1 = new Employee(a,b,c);
         System.out.println(e1);
 
         // Using Random function to generate the attendance
