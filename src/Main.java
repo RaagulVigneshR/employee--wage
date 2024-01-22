@@ -20,16 +20,17 @@ public class Main {
         }
 
         // Check weather employee is present or not
-        if(e1.attendance == 1){
-            System.out.println("Employee is present");
-            e1.workhour = 8;
-        }
-        else if(e1.attendance == 0) {
-            System.out.println("Employee is absent");
-        }
-        else {
-            System.out.println("Employee is Part-Time");
-            e1.workhour = 4;
+        switch (e1.attendance) {
+            case 1:
+                System.out.println("Employee is present");
+                e1.workhour = 8;
+                break;
+            case 2:
+                System.out.println("Employee is absent");
+                break;
+            default:
+                System.out.println("Employee is part time");
+                e1.workhour = 4;
         }
 
         Main m1 = new Main();
