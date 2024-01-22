@@ -5,7 +5,7 @@ public class Employee {
     Integer wageperhour;
     Integer workhour = 0;
 
-    Boolean attendance;
+    Integer attendance;
     Employee(String n,Integer i,Integer w){
         this.name = n;
         this.id = i;
