@@ -2,14 +2,25 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Employee e1 = new Employee("Raagul",88);
+        System.out.println(e1);
+        // Using Random function to generate the attendance
+        int check = (int)((Math.random()*10))%2;
+        // Condition for the attendance
+        if(check == 0){
+            e1.attendance = Boolean.FALSE;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
         }
+        else {
+            e1.attendance = Boolean.TRUE;
+        }
+        // Check weather employee is present or not
+        if(e1.attendance){
+            System.out.println("Employee is present");
+        }
+        else {
+            System.out.println("Employee is absent");
+        }
+
     }
 }
